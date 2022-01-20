@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: db-deployement
+  name: db-deployment
   namespace: adjablou
   labels:
     app: db
@@ -22,7 +22,7 @@ spec:
       - envFrom:
         - secretRef:
             name: db-secret
-        name: db-deployement
-        image: harbor.dev.afsmtddso.com/adjablou/db:971c881-4400143
+        name: db-deployment
+        image: harbor.dev.afsmtddso.com/adjablou/db@sha256:0a4d6a6114f32e50aa98d21dc49705778a9327f1364cb581702cb133c555f247
         ports:
         - containerPort: 5432

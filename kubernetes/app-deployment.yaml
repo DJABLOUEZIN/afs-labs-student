@@ -22,7 +22,7 @@ spec:
       - envFrom:
         - secretRef:
             name: db-secret
-        name: app-deployement
-        image: harbor.dev.afsmtddso.com/adjablou/app:971c881-4400143
+        name: app-deployment
+        image: harbor.dev.afsmtddso.com/adjablou/app@sha256:796fc966df274df470b24921081676390d222cfe949ac7d9f3b85a7e35ebb3ab
         ports:
         - containerPort: 5000
