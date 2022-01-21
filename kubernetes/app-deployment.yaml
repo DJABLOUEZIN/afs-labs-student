@@ -25,6 +25,6 @@ spec:
         - secretRef:
             name: db-secret
         name: app-deployment
-        image: harbor.dev.afsmtddso.com/adjablou/app@sha256:796fc966df274df470b24921081676390d222cfe949ac7d9f3b85a7e35ebb3ab
+        image: docker pull harbor.dev.afsmtddso.com/adjablou/app@sha256:bde8d9398dc7652c3d6ab92f7a8585105699dbdd60b7b81d076fda7502b85478
         ports:
         - containerPort: 5000
